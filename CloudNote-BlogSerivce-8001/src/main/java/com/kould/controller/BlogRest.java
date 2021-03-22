@@ -20,7 +20,7 @@ public class BlogRest {
 
     @RequestMapping("addBlog")
     @HystrixCommand
-    public Object addBlog(BlogBaseDTO blogBaseDTO) {
+    public Object add(BlogBaseDTO blogBaseDTO) {
         return this.blogService.add(blogBaseDTO) ;
     }
 

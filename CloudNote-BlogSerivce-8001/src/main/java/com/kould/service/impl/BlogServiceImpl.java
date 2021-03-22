@@ -40,22 +40,20 @@ public class BlogServiceImpl implements IBlogService {
     public List<BlogBaseDTO> findByBlogTitle(BlogBaseDTO blogBaseDTO, PageAndSizeDTO pageAndSizeDTO) {
         Page<BlogPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
         QueryWrapper<BlogPO> wrapper = new QueryWrapper<>() ;
-        wrapper.likeRight("title",blogBaseDTO.getTitle())
-                .or().
-                likeLeft("title",blogBaseDTO.getTitle()) ;
+        wrapper.like("title",blogBaseDTO.getTitle());
         List<BlogPO> POList = this.blogMapper.selectPage(page, wrapper).getRecords() ;
-        return PosToDtos(POList);
+        return posToDtos(POList);
     }
 
     @Override
     public BlogBaseDTO findByBlogId(BlogBaseDTO blogBaseDTO) {
-        return PoToDto(this.blogMapper.selectById(blogBaseDTO.getId()));
+        return poToDto(this.blogMapper.selectById(blogBaseDTO.getId()));
     }
 
     @Override
     public List<BlogBaseDTO> allBlogList(PageAndSizeDTO pageAndSizeDTO) {
         Page<BlogPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
-        return PosToDtos(this.blogMapper.selectPage(page, null).getRecords());
+        return posToDtos(this.blogMapper.selectPage(page, null).getRecords());
     }
 
     @Override
@@ -63,8 +61,7 @@ public class BlogServiceImpl implements IBlogService {
         Page<BlogPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
         QueryWrapper<BlogPO> wrapper = new QueryWrapper<>();
         wrapper.eq("owner_id",userMessageDTO.getId()) ;
-        List<BlogPO> POList = this.blogMapper.selectPage(page, wrapper).getRecords() ;
-        return PosToDtos(POList);
+        return posToDtos(this.blogMapper.selectPage(page, wrapper).getRecords());
     }
 
     @Override
@@ -72,7 +69,7 @@ public class BlogServiceImpl implements IBlogService {
         Page<BlogPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
         QueryWrapper<BlogPO> wrapper = new QueryWrapper<>();
         wrapper.eq("crowd_id",crowdBaseDTO.getId()) ;
-        return PosToDtos(this.blogMapper.selectPage(page, wrapper).getRecords());
+        return posToDtos(this.blogMapper.selectPage(page, wrapper).getRecords());
     }
 
 
@@ -82,13 +79,13 @@ public class BlogServiceImpl implements IBlogService {
         return blogPO ;
     }
 
-    private BlogBaseDTO PoToDto(BlogPO blogPO) {
+    private BlogBaseDTO poToDto(BlogPO blogPO) {
         BlogBaseDTO blogBaseDTO = new BlogBaseDTO();
         BeanUtils.copyProperties(blogPO, blogBaseDTO);
         return blogBaseDTO ;
     }
 
-    private List<BlogBaseDTO> PosToDtos(List<BlogPO> POList) {
+    private List<BlogBaseDTO> posToDtos(List<BlogPO> POList) {
         List<BlogBaseDTO> DTOList = new ArrayList<>() ;
         for (BlogPO blogPO : POList ) {
             BlogBaseDTO baseDTO = new BlogBaseDTO() ;

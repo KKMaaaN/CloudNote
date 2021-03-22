@@ -40,9 +40,7 @@ public class CrowdServiceImpl implements ICrowdService {
                                               PageAndSizeDTO pageAndSizeDTO) {
         Page<CrowdPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
         QueryWrapper<CrowdPO> wrapper = new QueryWrapper<>() ;
-        wrapper.likeRight("name",crowdBaseDTO.getName())
-                .or().
-                likeLeft("name",crowdBaseDTO.getName()) ;
+        wrapper.like("name",crowdBaseDTO.getName());
         return posToDtos(this.crowdMapper.selectPage(page, wrapper).getRecords());
     }
 

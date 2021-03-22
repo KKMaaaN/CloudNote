@@ -20,7 +20,7 @@ public class UserRest {
 
     @RequestMapping("addUser")
     @HystrixCommand
-    public Object addUser(UserLoginDTO userLoginDTO, UserMessageDTO userMessageDTO) {
+    public Object add(UserLoginDTO userLoginDTO, UserMessageDTO userMessageDTO) {
         return this.userService.add(userLoginDTO, userMessageDTO) ;
     }
 

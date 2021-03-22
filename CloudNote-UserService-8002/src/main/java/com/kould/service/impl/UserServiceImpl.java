@@ -2,7 +2,6 @@ package com.kould.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.kould.dto.BlogBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
 import com.kould.dto.UserLoginDTO;
 import com.kould.dto.UserMessageDTO;
@@ -33,21 +32,19 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public int editMessage(UserMessageDTO userMessageDTO) {
-        return this.userMapper.updateById(dtoToPo(null,userMessageDTO));
+        return this.userMapper.updateById(dtoToMessagePo(userMessageDTO));
     }
 
     @Override
     public int editLogin(UserLoginDTO userLoginDTO) {
-        return this.userMapper.updateById(dtoToPo(userLoginDTO,null));
+        return this.userMapper.updateById(dtoToLoginPo(userLoginDTO));
     }
 
     @Override
     public List<UserMessageDTO> findByUserName(UserMessageDTO userMessageDTO, PageAndSizeDTO pageAndSizeDTO) {
         Page<UserPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize()) ;
         QueryWrapper<UserPO> wrapper = new QueryWrapper<>() ;
-        wrapper.likeRight("name",userMessageDTO.getName())
-                .or().
-                likeLeft("name",userMessageDTO.getName()) ;
+        wrapper.like("name",userMessageDTO.getName()) ;
         return PosToDtos(this.userMapper.selectPage(page, wrapper).getRecords());
     }
 
@@ -66,6 +63,18 @@ public class UserServiceImpl implements IUserService {
         UserPO userPO = new UserPO() ;
         BeanUtils.copyProperties(userLoginDTO,userPO);
         BeanUtils.copyProperties(userMessageDTO,userPO);
+        return userPO ;
+    }
+
+    private UserPO dtoToLoginPo (UserLoginDTO userLoginDTO) {
+        UserPO userPO = new UserPO() ;
+        BeanUtils.copyProperties(userLoginDTO,userPO);
+        return userPO ;
+    }
+
+    private UserPO dtoToMessagePo (UserMessageDTO userMessageDTODTO) {
+        UserPO userPO = new UserPO() ;
+        BeanUtils.copyProperties(userMessageDTODTO,userPO);
         return userPO ;
     }
 
