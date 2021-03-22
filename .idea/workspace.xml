@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复">
+      <change beforePath="$PROJECT_DIR$/CloudNote-Zuul-9501/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1q4NMz2MqnJu4z20wj8RItdryXc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CloudNote\CloudNote-CommentService-8004\src\main\java\com\kould" />
+      <recent name="D:\CloudNote\CloudNote-Web\src\main\resources" />
+      <recent name="D:\CloudNote\CloudNote-Web\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kould.service.impl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserService8002">
+    <configuration name="BlogService8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-BlogSerivce-8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.BlogService8001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentService8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-CommentService-8004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.CommentService8004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrowdSerivce8003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-CrowdSerivce-8003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.CrowdSerivce8003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserService8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-UserService-8002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.UserService8002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Zuul9501" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-Zuul-9501" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.Zuul9501" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Zuul9501" />
+        <item itemvalue="Spring Boot.CommentService8004" />
+        <item itemvalue="Spring Boot.UserService8002" />
+        <item itemvalue="Spring Boot.CrowdSerivce8003" />
+        <item itemvalue="Spring Boot.BlogService8001" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="" />
+      <created>1616334861754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616334861754</updated>
+      <workItem from="1616334863728" duration="4092000" />
+      <workItem from="1616388500236" duration="9599000" />
+      <workItem from="1616398729122" duration="207000" />
+      <workItem from="1616399233072" duration="19815000" />
+      <workItem from="1616425742585" duration="61000" />
+    </task>
+    <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
+      <created>1616390954544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616390954545</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1、Crowd服务搭建完成&#10;2、新建CloudNote-Web模块整合通用配置文件和资源文件">
+      <created>1616401950577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616401950577</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复">
+      <created>1616418509437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616418509437</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复">
+      <created>1616418537628</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616418537628</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中" />
+    <MESSAGE value="1、Crowd服务搭建完成&#10;2、新建CloudNote-Web模块整合通用配置文件和资源文件" />
+    <MESSAGE value="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.concurrent.TimeoutException" package="java.util.concurrent" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
