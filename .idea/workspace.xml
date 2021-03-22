@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复">
-      <change beforePath="$PROJECT_DIR$/CloudNote-Zuul-9501/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +163,7 @@
       <workItem from="1616388500236" duration="9599000" />
       <workItem from="1616398729122" duration="207000" />
       <workItem from="1616399233072" duration="19815000" />
-      <workItem from="1616425742585" duration="61000" />
+      <workItem from="1616425742585" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
