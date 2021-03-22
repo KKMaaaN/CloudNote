@@ -1,0 +1,35 @@
+server:
+  port: 8001
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: http://localhost:8001
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 5
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+  application:
+    name: cloudnote-blog-service
+
+
+info:
+  app.name: CloudNote-Blog-Service
+  company.name: www.kould.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

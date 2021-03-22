@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-Api" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-BlogSerivce-8001" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-CrowdSerivce-8003" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-Eureka-7001" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-UserService-8002" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-Web" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-Zuul-9501" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK" />
+</project>

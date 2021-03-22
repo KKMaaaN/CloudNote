@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CloudNote-Web:war">
+    <output-path>$PROJECT_DIR$/CloudNote-Web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CloudNote-Web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CloudNote.war">
+      <element id="artifact" artifact-name="CloudNote-Web:war exploded" />
+    </root>
+  </artifact>
+</component>

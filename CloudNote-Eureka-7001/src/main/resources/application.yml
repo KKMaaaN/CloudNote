@@ -1,0 +1,11 @@
+server:
+  port: 7001
+
+eureka:
+  #server:
+
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+    fetch-registry: false
+    register-with-eureka: false

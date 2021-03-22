@@ -1,0 +1,19 @@
+server:
+  port: 9501
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: http://localhost:9501
+zuul:
+  ignored-services: "*"
+  routes:
+    cloudnote-user-service: /user/**
+    cloudnote-blog-service: /blog/**
+  prefix: /cloudnote
+spring:
+  application:
+    name: cloudnote-zuul-9501

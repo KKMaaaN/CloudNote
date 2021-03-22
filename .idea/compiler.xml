@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CloudNote-CrowdSerivce-8003" />
+        <module name="CloudNote-Zuul-9501" />
+        <module name="CloudNote-Web" />
+        <module name="CloudNote-Eureka-7001" />
+        <module name="CloudNote-UserService-8002" />
+        <module name="CloudNote-Api" />
+        <module name="CloudNote-BlogSerivce-8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="CloudNote" target="1.7" />
+      <module name="CloudNote-Api" target="1.7" />
+      <module name="CloudNote-BlogSerivce-8001" target="1.7" />
+      <module name="CloudNote-CrowdSerivce-8003" target="1.7" />
+      <module name="CloudNote-Eureka-7001" target="1.7" />
+      <module name="CloudNote-UserService-8002" target="1.7" />
+      <module name="CloudNote-Web" target="1.7" />
+      <module name="CloudNote-Zuul-9501" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
