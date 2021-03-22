@@ -23,8 +23,7 @@ public interface ICrowdService {
     @PostMapping(PREFIX + "getCrowdByCrowdId")
     CrowdBaseDTO findByCrowdId(CrowdBaseDTO crowdBaseDTO) ;
     @PostMapping(PREFIX + "getCrowdsOfAll")
-    List<CrowdBaseDTO> findAllCrowd(CrowdBaseDTO crowdBaseDTO,
-                                       PageAndSizeDTO pageAndSizeDTO) ;
+    List<CrowdBaseDTO> findAllCrowd(PageAndSizeDTO pageAndSizeDTO) ;
     @PostMapping(PREFIX + "getCrowdsByUserId")
     List<CrowdBaseDTO> findByUserId(UserMessageDTO userMessageDTO,
                                     PageAndSizeDTO pageAndSizeDTO) ;

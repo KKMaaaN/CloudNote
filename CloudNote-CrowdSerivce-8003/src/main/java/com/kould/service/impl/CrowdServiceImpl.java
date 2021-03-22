@@ -52,8 +52,7 @@ public class CrowdServiceImpl implements ICrowdService {
     }
 
     @Override
-    public List<CrowdBaseDTO> findAllCrowd(CrowdBaseDTO crowdBaseDTO,
-                                           PageAndSizeDTO pageAndSizeDTO) {
+    public List<CrowdBaseDTO> findAllCrowd(PageAndSizeDTO pageAndSizeDTO) {
         Page<CrowdPO> page = new Page<>(pageAndSizeDTO.getIndex(), pageAndSizeDTO.getStepSize());
         return posToDtos(this.crowdMapper.selectPage(page,null).getRecords());
     }

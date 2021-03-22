@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="CloudNote-BlogSerivce-8001:war exploded">
-    <output-path>$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/CloudNote-BlogSerivce-8001</output-path>
+    <output-path>$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/CloudNote</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -14,6 +14,9 @@
           <element id="module-output" name="CloudNote-BlogSerivce-8001" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="CloudNote-Web-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="CloudNote-Web" />
+          </element>
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:2.1.5.RELEASE" />
@@ -159,7 +162,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/CloudNote-BlogSerivce-8001/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/CloudNote/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="CloudNote-BlogSerivce-8001/web/Web" />
     </root>

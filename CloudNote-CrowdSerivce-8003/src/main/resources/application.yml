@@ -5,8 +5,8 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
-      logic-not-delete-value: 1
-      logic-delete-value: 0
+      logic-not-delete-value: 0
+      logic-delete-value: 1
 eureka:
   client:
     register-with-eureka: true
@@ -26,7 +26,6 @@ spring:
       force: true
   application:
     name: cloudnote-crowd-service
-
 info:
   app.name: CloudNote-Crowd-Service
   company.name: www.kould.com

@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Api" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-BlogSerivce-8001" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-CommentService-8004" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-CrowdSerivce-8003" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Eureka-7001" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-UserService-8002" />

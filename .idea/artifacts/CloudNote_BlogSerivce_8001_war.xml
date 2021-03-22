@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="CloudNote-BlogSerivce-8001.war">
+    <root id="archive" name="CloudNote.war">
       <element id="artifact" artifact-name="CloudNote-BlogSerivce-8001:war exploded" />
     </root>
   </artifact>

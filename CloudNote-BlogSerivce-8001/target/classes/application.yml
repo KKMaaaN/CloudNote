@@ -31,5 +31,5 @@ spring:
 info:
   app.name: CloudNote-Blog-Service
   company.name: www.kould.com
-  build.artifactId: CloudNote-BlogSerivce-8001
-  build.version: 1.0-SNAPSHOT
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

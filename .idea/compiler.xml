@@ -12,6 +12,7 @@
         <module name="CloudNote-Web" />
         <module name="CloudNote-Eureka-7001" />
         <module name="CloudNote-UserService-8002" />
+        <module name="CloudNote-CommentService-8004" />
         <module name="CloudNote-Api" />
         <module name="CloudNote-BlogSerivce-8001" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="CloudNote" target="1.7" />
       <module name="CloudNote-Api" target="1.7" />
       <module name="CloudNote-BlogSerivce-8001" target="1.7" />
+      <module name="CloudNote-CommentService-8004" target="1.7" />
       <module name="CloudNote-CrowdSerivce-8003" target="1.7" />
       <module name="CloudNote-Eureka-7001" target="1.7" />
       <module name="CloudNote-UserService-8002" target="1.7" />

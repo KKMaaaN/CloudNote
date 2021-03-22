@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.List;
 
 @FeignClient(value = "CLOUDNOTE-ZUUL-9501")
-public interface IBlogService extends IBaseService<BlogBaseDTO> {
+public interface IBlogService {
     String PREFIX = "/cloudnote/blog/" ;
     @PostMapping(PREFIX + "addBlog")
     int add(BlogBaseDTO blogBaseDTO) ;
