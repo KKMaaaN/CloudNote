@@ -8,12 +8,14 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     instance-id: http://localhost:9501
+
+
 zuul:
-  ignored-services: "*"
   routes:
     cloudnote-user-service: /user/**
-    cloudnote-blog-service: /blog/**
-  prefix: /cloudnote
+    CLOUDNOTE-BLOG-SERVICE: /blog/**
+  ignored-services:
+    "*"
 spring:
   application:
     name: cloudnote-zuul-9501
