@@ -1,0 +1,2 @@
+INSERT INTO CloudNote.blog (id, title, introduction, content, create_time, update_time, image, owner_id, deleted, crowd_id) VALUES (1373164713970081794, '测试标题', '测试简介', '测试正文', '2021-03-20', '2021-03-20', null, 1373161584444669954, 0, 1373958156455596033);
+INSERT INTO CloudNote.blog (id, title, introduction, content, create_time, update_time, image, owner_id, deleted, crowd_id) VALUES (1373977875858374657, '新插入的Blog修改了', null, '新插入的正文修改了', '2021-03-22', '2021-03-22', null, 1373161584444669954, 0, null);

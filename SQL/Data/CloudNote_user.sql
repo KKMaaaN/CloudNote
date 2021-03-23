@@ -1,0 +1,2 @@
+INSERT INTO CloudNote.user (id, name, gender, phone_number, pass_word, nationality, introduction, create_time, update_time, avatar, deleted, email) VALUES (1373161584444669954, '测试用户', 1, '15626956201', '123456', 'cn', '测试简介', '2021-03-20', '2021-03-20', null, 0, '2815680434@qq.com');
+INSERT INTO CloudNote.user (id, name, gender, phone_number, pass_word, nationality, introduction, create_time, update_time, avatar, deleted, email) VALUES (1373969078909726722, 'ddddddddddddd', 0, '123456789', '0987654321', null, '一片空空的简介', '2021-03-22', '2021-03-22', null, 0, '3231@qq.com');

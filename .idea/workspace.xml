@@ -4,62 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="Zuul路由网关集成Swagger2统一管理各服务的Api文档">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Hystrix_DashBoard_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Hystrix_DashBoard_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Hystrix_Turbine_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Hystrix_Turbine_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_turbine_turbine_core_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_dashboard_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_turbine_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_dashboard_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_d3js_3_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/BlogServiceFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CommentSerivceFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CrowdServiceFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/UserServiceFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/CloudNote-Hystrix-DashBoard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/java/com/kould/HystrixDashBoard9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/CloudNote-Hystrix-Turbine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/java/com/kould/Turbine9101.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/HystrixConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/fallback/BaseFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/src/main/java/com/kould/fallback/ZuulFallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑">
+      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_blog.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_comment.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_crowd.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/建库sql指令.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICrowdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICrowdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/UserSerivceFallbackFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/com/kould/Zuul9501.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Zuul-9501/target/classes/com/kould/Zuul9501.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -233,7 +189,7 @@
       <workItem from="1616398729122" duration="207000" />
       <workItem from="1616399233072" duration="19815000" />
       <workItem from="1616425742585" duration="1476000" />
-      <workItem from="1616475722057" duration="18164000" />
+      <workItem from="1616475722057" duration="19746000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -284,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616486217195</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑">
+      <created>1616500802894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616500802894</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +266,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/newrepo" />
     </ignored-roots>
@@ -311,7 +275,8 @@
     <MESSAGE value="1、Comment服务搭建完成&#10;2、全部接口测试完成，正常运行！！&#10;3、模糊查询修复" />
     <MESSAGE value="各模块集成Swagger2组件且rest层已配置完成" />
     <MESSAGE value="Zuul路由网关集成Swagger2统一管理各服务的Api文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zuul路由网关集成Swagger2统一管理各服务的Api文档" />
+    <MESSAGE value="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,75 @@
+create database CloudNote;
+
+use CloudNote;
+
+create table user
+(
+    id           bigint                        not null comment '用户id'
+        primary key,
+    name         varchar(40)                   not null comment '用户名',
+    gender       tinyint     default -1        null comment '性别',
+    phone_number varchar(20)                   not null comment '电话号',
+    pass_word    varchar(40)                   not null comment '密码',
+    nationality  varchar(20)                   null comment '国籍',
+    introduction varchar(80) default '一片空空的简介' not null comment '简介',
+    create_time  date                          not null comment '创造时间',
+    update_time  date                          not null comment '更新时间',
+    avatar       blob                          null,
+    deleted      tinyint                       not null,
+    email        varchar(40)                   null comment '邮箱',
+    constraint user_phone_number_uindex
+        unique (phone_number)
+);
+
+create table crowd
+(
+    id           bigint      default 0         not null comment '板块Id'
+        primary key,
+    name         varchar(40)                   not null comment '板块名',
+    introduction varchar(40) default '一片空空的简介' not null comment '简介',
+    create_time  date                          not null comment '创建时间',
+    update_time  date                          not null,
+    avatar       blob                          null comment '板块头像',
+    owner_id     bigint                        not null comment '所有者Id',
+    deleted      tinyint     default 0         not null,
+    constraint crowd_name_uindex
+        unique (name),
+    constraint crowd_user_id_fk
+        foreign key (owner_id) references user (id)
+);
+
+create table blog
+(
+    id           bigint      not null comment 'BlogId'
+        primary key,
+    title        varchar(40) not null comment 'Blog标题',
+    introduction varchar(40) null comment '简介',
+    content      text        not null comment '正文',
+    create_time  date        not null comment '创造时间',
+    update_time  date        not null comment '更新时间',
+    image        blob        null comment '图片',
+    owner_id     bigint      not null comment '所属用户Id',
+    deleted      tinyint     not null comment '逻辑删除Flag',
+    crowd_id     bigint      null,
+    constraint blog_crowd_id_fk
+        foreign key (crowd_id) references crowd (id),
+    constraint blog_user_id_fk
+        foreign key (owner_id) references user (id)
+);
+
+create table comment
+(
+    id          bigint            not null comment '评论Id'
+        primary key,
+    content     text              not null comment '评论正文',
+    create_time date              not null comment '创建时间',
+    update_time date              not null comment '创建时间',
+    blog_id     bigint            not null comment '所属BlogId',
+    owner_id    bigint            not null comment '所属用户Id',
+    deleted     tinyint default 0 not null,
+    constraint comment_blog_id_fk
+        foreign key (blog_id) references blog (id),
+    constraint comment_user_id_fk
+        foreign key (owner_id) references user (id)
+);
+
