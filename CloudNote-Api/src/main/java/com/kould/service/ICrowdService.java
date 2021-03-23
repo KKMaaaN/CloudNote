@@ -3,12 +3,13 @@ package com.kould.service;
 import com.kould.dto.CrowdBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
 import com.kould.dto.UserMessageDTO;
+import com.kould.service.fallback.CrowdServiceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUD-ZUUL-9501")
+@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = CrowdServiceFallbackFactory.class)
 public interface ICrowdService {
     String PREFIX = "/cloudnote/crowd/" ;
     @PostMapping(PREFIX + "addCrowd")

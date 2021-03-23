@@ -16,6 +16,8 @@
       <module>CloudNote-CrowdSerivce-8003</module>
     <module>CloudNote-Web</module>
       <module>CloudNote-CommentService-8004</module>
+      <module>CloudNote-Hystrix-DashBoard</module>
+      <module>CloudNote-Hystrix-Turbine</module>
   </modules>
   <packaging>pom</packaging>
 

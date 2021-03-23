@@ -4,12 +4,13 @@ import com.kould.dto.BlogBaseDTO;
 import com.kould.dto.CrowdBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
 import com.kould.dto.UserMessageDTO;
+import com.kould.service.fallback.BlogServiceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUDNOTE-ZUUL-9501")
+@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = BlogServiceFallbackFactory.class)
 public interface IBlogService {
     String PREFIX = "/cloudnote/blog/" ;
     @PostMapping(PREFIX + "addBlog")

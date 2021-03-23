@@ -10,6 +10,10 @@
     <file url="file://$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CloudNote-Eureka-7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CloudNote-Eureka-7001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CloudNote-UserService-8002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CloudNote-UserService-8002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CloudNote-Web/src/main/java" charset="UTF-8" />

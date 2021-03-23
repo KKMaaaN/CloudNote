@@ -1,0 +1,11 @@
+server:
+  port: 9101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+    register-with-eureka: false
+    fetch-registry: true
+turbine:
+  app-config: CLOUDNOTE-BLOG-SERVICE,CLOUDNOTE-USER-SERVICE,CLOUDNOTE-CROWD-SERVICE,CLOUDNOTE—COMMENT—SERVICE
+  cluster-name-expression: new String("default")

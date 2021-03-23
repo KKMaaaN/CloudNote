@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CloudNote-Hystrix-DashBoard:war">
+    <output-path>$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CloudNote-Hystrix-DashBoard</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CloudNote-Hystrix-DashBoard.war">
+      <element id="artifact" artifact-name="CloudNote-Hystrix-DashBoard:war exploded" />
+    </root>
+  </artifact>
+</component>

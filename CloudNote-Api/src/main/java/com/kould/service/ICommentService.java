@@ -4,12 +4,13 @@ import com.kould.dto.BlogBaseDTO;
 import com.kould.dto.CommentBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
 import com.kould.dto.UserMessageDTO;
+import com.kould.service.fallback.CommentSerivceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUD-ZUUL-9501")
+@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = CommentSerivceFallbackFactory.class)
 public interface ICommentService {
     String PREFIX = "/cloudnote/comment/" ;
     @PostMapping(PREFIX + "addComment")
