@@ -15,7 +15,7 @@ zuul:
     cloudnote-user-service: /user/**
     cloudnote-blog-service: /blog/**
     cloudnote-crowd-service: /crowd/**
-    cloudnote-comment-service: /comment/**
+    cloudnote-comment-serivce: /comment/**
   ignored-services:
     "*"
 spring:
