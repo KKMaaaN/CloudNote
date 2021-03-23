@@ -4,17 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑">
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_blog.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_comment.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_crowd.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/Data/CloudNote_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/建库sql指令.txt" afterDir="false" />
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Sleuth_8601_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Sleuth_8601_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_2_0_30_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_2_0_30_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_context_log4j2_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_messaging_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_rpc_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_servlet_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_web_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_webmvc_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_metrics_prometheus_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_autoconfigure_ui_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_server_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_ui_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_amqp_client_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_kafka_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_19_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_collector_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_3_8_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_3_8_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_core_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/CloudNote-Sleuth-8601.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/src/main/java/com/kould/Sleuth8601.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Sleuth-8601/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Eureka-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Eureka-7001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +156,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HystrixDashBoard9001">
+  <component name="RunManager" selected="Spring Boot.Sleuth8601">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -114,15 +181,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HystrixDashBoard9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="CloudNote-Hystrix-DashBoard" />
+    <configuration name="Sleuth8601" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-Sleuth-8601" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kould.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.HystrixDashBoard9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.Sleuth8601" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,10 +236,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserService8002" />
+        <item itemvalue="Spring Boot.CommentService8004" />
+        <item itemvalue="Spring Boot.Sleuth8601" />
         <item itemvalue="Spring Boot.Zuul9501" />
         <item itemvalue="Spring Boot.Turbine9101" />
-        <item itemvalue="Spring Boot.CommentService8004" />
-        <item itemvalue="Spring Boot.HystrixDashBoard9001" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +256,7 @@
       <workItem from="1616398729122" duration="207000" />
       <workItem from="1616399233072" duration="19815000" />
       <workItem from="1616425742585" duration="1476000" />
-      <workItem from="1616475722057" duration="19746000" />
+      <workItem from="1616475722057" duration="23315000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -247,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616500802894</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试">
+      <created>1616502129545</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616502129545</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +350,8 @@
     <MESSAGE value="各模块集成Swagger2组件且rest层已配置完成" />
     <MESSAGE value="Zuul路由网关集成Swagger2统一管理各服务的Api文档" />
     <MESSAGE value="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑" />
+    <MESSAGE value="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

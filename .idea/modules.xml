@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/CloudNote-Eureka-7001/CloudNote-Eureka-7001.iml" filepath="$PROJECT_DIR$/CloudNote-Eureka-7001/CloudNote-Eureka-7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/CloudNote-Hystrix-DashBoard.iml" filepath="$PROJECT_DIR$/CloudNote-Hystrix-DashBoard/CloudNote-Hystrix-DashBoard.iml" />
       <module fileurl="file://$PROJECT_DIR$/CloudNote-Hystrix-Turbine/CloudNote-Hystrix-Turbine.iml" filepath="$PROJECT_DIR$/CloudNote-Hystrix-Turbine/CloudNote-Hystrix-Turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CloudNote-Sleuth-8601/CloudNote-Sleuth-8601.iml" filepath="$PROJECT_DIR$/CloudNote-Sleuth-8601/CloudNote-Sleuth-8601.iml" />
       <module fileurl="file://$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" filepath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" filepath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/CloudNote-Zuul-9501/CloudNote-Zuul-9501.iml" filepath="$PROJECT_DIR$/CloudNote-Zuul-9501/CloudNote-Zuul-9501.iml" />

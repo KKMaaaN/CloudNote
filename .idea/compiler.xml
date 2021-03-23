@@ -13,6 +13,7 @@
         <module name="CloudNote-Web" />
         <module name="CloudNote-Hystrix-DashBoard" />
         <module name="CloudNote-Eureka-7001" />
+        <module name="CloudNote-Sleuth-8601" />
         <module name="CloudNote-UserService-8002" />
         <module name="CloudNote-CommentService-8004" />
         <module name="CloudNote-Api" />
@@ -28,6 +29,7 @@
       <module name="CloudNote-Eureka-7001" target="1.7" />
       <module name="CloudNote-Hystrix-DashBoard" target="1.7" />
       <module name="CloudNote-Hystrix-Turbine" target="1.7" />
+      <module name="CloudNote-Sleuth-8601" target="1.7" />
       <module name="CloudNote-UserService-8002" target="1.7" />
       <module name="CloudNote-Web" target="1.7" />
       <module name="CloudNote-Zuul-9501" target="1.7" />

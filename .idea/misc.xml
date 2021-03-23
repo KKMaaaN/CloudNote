@@ -8,6 +8,7 @@
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Eureka-7001" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Hystrix-DashBoard" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Hystrix-Turbine" />
+    <file type="web" url="file://$PROJECT_DIR$/CloudNote-Sleuth-8601" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-UserService-8002" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Web" />
     <file type="web" url="file://$PROJECT_DIR$/CloudNote-Zuul-9501" />
