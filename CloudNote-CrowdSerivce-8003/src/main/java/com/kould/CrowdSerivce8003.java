@@ -7,6 +7,7 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @MapperScan("com.kould.mapper")
@@ -14,6 +15,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @EnableDiscoveryClient
 @EnableCircuitBreaker //熔断机制启动
 @EnableHystrix  //Hystrix支持启动
+@EnableSwagger2
 public class CrowdSerivce8003 {
     public static void main(String[] args) {
         SpringApplication.run(CrowdSerivce8003.class, args) ;

@@ -23,6 +23,7 @@ public class BlogServiceImpl implements IBlogService {
 
     @Override
     public int add(BlogBaseDTO blogBaseDTO) {
+        blogBaseDTO.setId(null);
         return this.blogMapper.insert(dtoToPo(blogBaseDTO)) ;
     }
 

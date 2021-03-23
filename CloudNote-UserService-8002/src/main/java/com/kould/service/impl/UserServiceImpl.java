@@ -22,6 +22,8 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public int add(UserLoginDTO userLoginDTO, UserMessageDTO userMessageDTO) {
+        userLoginDTO.setId(null);
+        userMessageDTO.setId(null);
         return this.userMapper.insert(dtoToPo(userLoginDTO, userMessageDTO));
     }
 

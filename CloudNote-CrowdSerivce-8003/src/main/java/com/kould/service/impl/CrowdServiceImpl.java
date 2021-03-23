@@ -22,6 +22,7 @@ public class CrowdServiceImpl implements ICrowdService {
 
     @Override
     public int add(CrowdBaseDTO crowdBaseDTO) {
+        crowdBaseDTO.setId(null);
         return this.crowdMapper.insert(dtoToPo(crowdBaseDTO));
     }
 

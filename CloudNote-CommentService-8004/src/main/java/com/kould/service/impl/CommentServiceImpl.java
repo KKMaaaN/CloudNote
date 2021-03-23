@@ -21,6 +21,7 @@ public class CommentServiceImpl implements ICommentService {
     
     @Override
     public int add(CommentBaseDTO commentBaseDTO) {
+        commentBaseDTO.setId(null);
         return this.commentMapper.insert(dtoToPo(commentBaseDTO));
     }
 

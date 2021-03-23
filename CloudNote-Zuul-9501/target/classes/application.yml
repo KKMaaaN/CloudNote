@@ -13,7 +13,9 @@ eureka:
 zuul:
   routes:
     cloudnote-user-service: /user/**
-    CLOUDNOTE-BLOG-SERVICE: /blog/**
+    cloudnote-blog-service: /blog/**
+    cloudnote-crowd-service: /crowd/**
+    cloudnote-comment-service: /comment/**
   ignored-services:
     "*"
 spring:
