@@ -1,9 +1,8 @@
 package com.kould.controller;
 
-import com.kould.dto.BlogBaseDTO;
-import com.kould.dto.CrowdBaseDTO;
-import com.kould.dto.PageAndSizeDTO;
-import com.kould.dto.UserMessageDTO;
+import com.kould.dto.blog.BlogPackageDTO;
+import com.kould.dto.crowd.CrowdPackageDTO;
+import com.kould.dto.user.UserPackageDTO;
 import com.kould.service.IBlogService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.swagger.annotations.Api;
@@ -38,8 +37,8 @@ public class BlogRest {
     })
     @PostMapping("addBlog")
     @HystrixCommand
-    public Object add(BlogBaseDTO blogBaseDTO) {
-        return this.blogService.add(blogBaseDTO) ;
+    public Object add(@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.blogService.add(blogPackageDTO.getBlogBaseDTO()) ;
     }
 
     @ApiOperation(value = "删除Blog", notes = "删除BlogBaseDTO对象，成功返回1，失败返回0")
@@ -49,8 +48,8 @@ public class BlogRest {
     })
     @PostMapping("removeBlog")
     @HystrixCommand
-    public Object remove(BlogBaseDTO blogBaseDTO) {
-        return this.blogService.remove(blogBaseDTO) ;
+    public Object remove(@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.blogService.remove(blogPackageDTO.getBlogBaseDTO()) ;
     }
 
     @ApiOperation(value = "修改Blog", notes = "修改BlogBaseDTO对象，成功返回1，失败返回0")
@@ -68,8 +67,8 @@ public class BlogRest {
     })
     @PostMapping("editBlog")
     @HystrixCommand
-    public Object edit(BlogBaseDTO blogBaseDTO) {
-        return this.blogService.edit(blogBaseDTO) ;
+    public Object edit(@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.blogService.edit(blogPackageDTO.getBlogBaseDTO()) ;
     }
 
     @ApiOperation(value = "以Blog的标题搜索Blog", notes = "以Blog标题的形式模糊搜索BlogBaseDTO对象，" +
@@ -84,8 +83,9 @@ public class BlogRest {
     })
     @PostMapping("getBlogsByBlogTitle")
     @HystrixCommand //Hystrix监控注解
-    public Object getBlogsByBlogTitle (BlogBaseDTO blogBaseDTO, PageAndSizeDTO pageAndSizeDTO) {
-        return this.blogService.findByBlogTitle(blogBaseDTO, pageAndSizeDTO) ;
+    public Object getBlogsByBlogTitle (@RequestBody BlogPackageDTO blogPackageDTO) {
+        System.out.println(blogPackageDTO);
+        return this.blogService.findByBlogTitle(blogPackageDTO.getBlogBaseDTO(), blogPackageDTO.getPageAndSizeDTO()) ;
     }
 
 
@@ -96,8 +96,8 @@ public class BlogRest {
     })
     @PostMapping("getBlogByBlogId")
     @HystrixCommand
-    public Object getBlogByBlogId (BlogBaseDTO blogBaseDTO) {
-        return this.blogService.findByBlogId(blogBaseDTO) ;
+    public Object getBlogByBlogId (@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.blogService.findByBlogId(blogPackageDTO.getBlogBaseDTO()) ;
     }
 
     @ApiOperation(value = "搜索所有的Blog", notes = "直接返回所有的BlogBaseDTO对象")
@@ -109,8 +109,8 @@ public class BlogRest {
     })
     @PostMapping("getBlogsOfAll")
     @HystrixCommand
-    public Object getBlogsOfAll (PageAndSizeDTO pageAndSizeDTO) {
-        return this.blogService.allBlogList(pageAndSizeDTO) ;
+    public Object getBlogsOfAll (@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.blogService.allBlogList(blogPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以用户的Id搜索所属的Blog", notes = "以UserId的形式准确搜索所属的BlogBaseDTO对象，" +
@@ -125,9 +125,8 @@ public class BlogRest {
     })
     @PostMapping("getBlogsByUserId")
     @HystrixCommand
-    public Object getBlogsByUserId (UserMessageDTO userMessageDTO,
-                                   PageAndSizeDTO pageAndSizeDTO) {
-        return this.blogService.findByUserId(userMessageDTO, pageAndSizeDTO) ;
+    public Object getBlogsByUserId (@RequestBody UserPackageDTO userPackageDTO) {
+        return this.blogService.findByUserId(userPackageDTO.getUserMessageDTO(), userPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以板块的Id搜索所属的Blog", notes = "以CrowdId的形式准确搜索所属的BlogBaseDTO对象，" +
@@ -142,9 +141,8 @@ public class BlogRest {
     })
     @PostMapping("getBlogsByCrowdId")
     @HystrixCommand
-    public Object getBlogsByCrowdId (CrowdBaseDTO crowdBaseDTO,
-                                     PageAndSizeDTO pageAndSizeDTO) {
-        return this.blogService.findByCrowdId(crowdBaseDTO, pageAndSizeDTO) ;
+    public Object getBlogsByCrowdId (@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.blogService.findByCrowdId(crowdPackageDTO.getCrowdBaseDTO(), crowdPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @PostMapping("discover")

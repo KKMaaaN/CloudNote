@@ -1,9 +1,8 @@
 package com.kould.service.fallback;
 
 import com.kould.dto.PageAndSizeDTO;
-import com.kould.dto.UserLoginDTO;
-import com.kould.dto.UserMessageDTO;
-import com.kould.service.IBlogService;
+import com.kould.dto.user.UserLoginDTO;
+import com.kould.dto.user.UserMessageDTO;
 import com.kould.service.IUserService;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;

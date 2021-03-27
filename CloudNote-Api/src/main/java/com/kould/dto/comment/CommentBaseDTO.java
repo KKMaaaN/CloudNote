@@ -1,4 +1,4 @@
-package com.kould.dto;
+package com.kould.dto.comment;
 
 import lombok.Data;
 
@@ -6,12 +6,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class CrowdBaseDTO implements Serializable {
+public class CommentBaseDTO implements Serializable {
     private Long id ;
-    private String name ;
-    private String introduction ;
+    private String content ;
     private Date createTime ;
     private Date updateTime ;
-    private byte[] avatar ;
+    private Long blogId ;
     private Long ownerId ;
 }

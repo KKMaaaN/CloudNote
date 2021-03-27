@@ -26,7 +26,13 @@ spring:
       force: true
   application:
     name: cloudnote-blog-service
-
+  zipkin:
+    sender:
+      type: web
+    base-url: http://localhost:8601 # 所有的数据提交到此服务之中
+  sleuth:
+    sampler:
+      probability: 1.0 # 定义抽样比率，默认为0.1
 
 info:
   app.name: CloudNote-Blog-Service

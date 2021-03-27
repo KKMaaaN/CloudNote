@@ -2,9 +2,9 @@ package com.kould.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.kould.dto.CrowdBaseDTO;
+import com.kould.dto.crowd.CrowdBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
-import com.kould.dto.UserMessageDTO;
+import com.kould.dto.user.UserMessageDTO;
 import com.kould.mapper.CrowdMapper;
 import com.kould.po.CrowdPO;
 import com.kould.service.ICrowdService;

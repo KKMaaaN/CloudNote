@@ -1,4 +1,4 @@
-package com.kould.dto;
+package com.kould.dto.user;
 
 import lombok.Data;
 

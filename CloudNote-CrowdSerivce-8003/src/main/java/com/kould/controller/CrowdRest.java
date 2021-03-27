@@ -1,8 +1,7 @@
 package com.kould.controller;
 
-import com.kould.dto.CrowdBaseDTO;
-import com.kould.dto.PageAndSizeDTO;
-import com.kould.dto.UserMessageDTO;
+import com.kould.dto.crowd.CrowdPackageDTO;
+import com.kould.dto.user.UserPackageDTO;
 import com.kould.service.ICrowdService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.swagger.annotations.Api;
@@ -12,6 +11,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Api(tags = "/crowd Crowd通用接口")
@@ -36,8 +36,8 @@ public class CrowdRest {
     })
     @PostMapping("addCrowd")
     @HystrixCommand
-    public Object add(CrowdBaseDTO crowdBaseDTO) {
-        return this.crowdService.add(crowdBaseDTO) ;
+    public Object add(@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.add(crowdPackageDTO.getCrowdBaseDTO()) ;
     }
 
     @ApiOperation(value = "删除Crowd", notes = "删除CrowdBaseDTO对象，成功返回1，失败返回0")
@@ -47,8 +47,8 @@ public class CrowdRest {
     })
     @PostMapping("removeCrowd")
     @HystrixCommand
-    public Object remove(CrowdBaseDTO crowdBaseDTO) {
-        return this.crowdService.remove(crowdBaseDTO) ;
+    public Object remove(@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.remove(crowdPackageDTO.getCrowdBaseDTO()) ;
     }
 
     @ApiOperation(value = "修改Crowd", notes = "修改CrowdBaseDTO对象，成功返回1，失败返回0")
@@ -64,8 +64,8 @@ public class CrowdRest {
     })
     @PostMapping("editCrowd")
     @HystrixCommand
-    public Object edit(CrowdBaseDTO crowdBaseDTO) {
-        return this.crowdService.edit(crowdBaseDTO) ;
+    public Object edit(@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.edit(crowdPackageDTO.getCrowdBaseDTO()) ;
     }
 
     @ApiOperation(value = "以Crowd的名字搜索Crowd", notes = "以Crowd名字的形式模糊搜索CrowdBaseDTO对象，" +
@@ -80,8 +80,9 @@ public class CrowdRest {
     })
     @PostMapping("getCrowdsByCrowdName")
     @HystrixCommand //Hystrix监控注解
-    public Object getCrowdsByCrowdName (CrowdBaseDTO crowdBaseDTO, PageAndSizeDTO pageAndSizeDTO) {
-        return this.crowdService.findByCrowdName(crowdBaseDTO, pageAndSizeDTO) ;
+    public Object getCrowdsByCrowdName (@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.findByCrowdName(crowdPackageDTO.getCrowdBaseDTO(),
+                crowdPackageDTO.getPageAndSizeDTO()) ;
     }
 
 
@@ -93,8 +94,8 @@ public class CrowdRest {
     })
     @PostMapping("getCrowdByCrowdId")
     @HystrixCommand
-    public Object getCrowdByCrowdId (CrowdBaseDTO crowdBaseDTO) {
-        return this.crowdService.findByCrowdId(crowdBaseDTO) ;
+    public Object getCrowdByCrowdId (@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.findByCrowdId(crowdPackageDTO.getCrowdBaseDTO()) ;
     }
 
     @ApiOperation(value = "搜索所有的Crowd", notes = "直接返回所有的CrowdBaseDTO对象")
@@ -106,8 +107,8 @@ public class CrowdRest {
     })
     @PostMapping("getCrowdsOfAll")
     @HystrixCommand
-    public Object getCrowdOfAll (PageAndSizeDTO pageAndSizeDTO) {
-        return this.crowdService.findAllCrowd(pageAndSizeDTO) ;
+    public Object getCrowdOfAll (@RequestBody CrowdPackageDTO crowdPackageDTO) {
+        return this.crowdService.findAllCrowd(crowdPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以Crowd的所属用户Id搜索Crowd", notes = "以UserId的形式准确搜索CrowdBaseDTO对象，" +
@@ -122,9 +123,9 @@ public class CrowdRest {
     })
     @PostMapping("getCrowdsByUserId")
     @HystrixCommand
-    public Object getCrowdsByUserId (UserMessageDTO userMessageDTO,
-                                    PageAndSizeDTO pageAndSizeDTO) {
-        return this.crowdService.findByUserId(userMessageDTO, pageAndSizeDTO) ;
+    public Object getCrowdsByUserId (@RequestBody UserPackageDTO userPackageDTO) {
+        return this.crowdService.findByUserId(userPackageDTO.getUserMessageDTO(),
+                userPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @PostMapping("discover")

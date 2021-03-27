@@ -1,9 +1,9 @@
 package com.kould.service;
 
-import com.kould.dto.BlogBaseDTO;
-import com.kould.dto.CommentBaseDTO;
+import com.kould.dto.blog.BlogBaseDTO;
+import com.kould.dto.comment.CommentBaseDTO;
 import com.kould.dto.PageAndSizeDTO;
-import com.kould.dto.UserMessageDTO;
+import com.kould.dto.user.UserMessageDTO;
 import com.kould.service.fallback.CommentSerivceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;

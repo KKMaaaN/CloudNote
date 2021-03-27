@@ -1,6 +1,8 @@
 package com.kould.controller;
 
-import com.kould.dto.*;
+import com.kould.dto.blog.BlogPackageDTO;
+import com.kould.dto.comment.CommentPackageDTO;
+import com.kould.dto.user.UserPackageDTO;
 import com.kould.service.ICommentService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.swagger.annotations.Api;
@@ -10,6 +12,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Api(tags = "/Comment Comment通用接口")
@@ -34,8 +37,8 @@ public class CommentRest {
     })
     @PostMapping("addComment")
     @HystrixCommand
-    public Object add(CommentBaseDTO commentBaseDTO) {
-        return this.commentService.add(commentBaseDTO) ;
+    public Object add(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.add(commentPackageDTO.getCommentBaseDTO()) ;
     }
 
     @ApiOperation(value = "删除Comment", notes = "删除CommentBaseDTO对象，成功返回1，失败返回0")
@@ -45,8 +48,8 @@ public class CommentRest {
     })
     @PostMapping("removeComment")
     @HystrixCommand
-    public Object remove(CommentBaseDTO commentBaseDTO) {
-        return this.commentService.remove(commentBaseDTO) ;
+    public Object remove(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.remove(commentPackageDTO.getCommentBaseDTO()) ;
     }
 
     @ApiOperation(value = "修改Comment", notes = "修改CommentBaseDTO对象，成功返回1，失败返回0")
@@ -58,8 +61,8 @@ public class CommentRest {
     })
     @PostMapping("editComment")
     @HystrixCommand
-    public Object edit(CommentBaseDTO commentBaseDTO) {
-        return this.commentService.edit(commentBaseDTO) ;
+    public Object edit(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.edit(commentPackageDTO.getCommentBaseDTO()) ;
     }
 
     @ApiOperation(value = "以Comment的正文搜索Comment", notes = "以Comment正文的形式模糊查询搜索CommentBaseDTO对象，" +
@@ -74,9 +77,9 @@ public class CommentRest {
     })
     @PostMapping("getCommentsByCommentContent")
     @HystrixCommand
-    public Object getCommentsByCommentContent(CommentBaseDTO commentBaseDTO,
-                                             PageAndSizeDTO pageAndSizeDTO) {
-        return this.commentService.findByCommentContent(commentBaseDTO, pageAndSizeDTO) ;
+    public Object getCommentsByCommentContent(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.findByCommentContent(commentPackageDTO.getCommentBaseDTO(),
+                commentPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以Comment的Id搜索Comment", notes = "以CommentId的形式准确查询搜索CommentBaseDTO对象")
@@ -86,8 +89,8 @@ public class CommentRest {
     })
     @PostMapping("getCommentByCommentId")
     @HystrixCommand
-    public Object getCommentByCommentId(CommentBaseDTO commentBaseDTO) {
-        return this.commentService.findByCommentId(commentBaseDTO) ;
+    public Object getCommentByCommentId(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.findByCommentId(commentPackageDTO.getCommentBaseDTO()) ;
     }
 
     @ApiOperation(value = "搜索所有的Comment", notes = "直接返回所有的CommentBaseDTO对象")
@@ -101,8 +104,8 @@ public class CommentRest {
     })
     @PostMapping("getCommentsOfAll")
     @HystrixCommand
-    public Object getCommentsOfAll(PageAndSizeDTO pageAndSizeDTO) {
-        return this.commentService.allCommentList(pageAndSizeDTO) ;
+    public Object getCommentsOfAll(@RequestBody CommentPackageDTO commentPackageDTO) {
+        return this.commentService.allCommentList(commentPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以Comment的所属用户Id搜索Comment", notes = "以UserId的形式准确查询搜索CommentBaseDTO对象，" +
@@ -117,8 +120,8 @@ public class CommentRest {
     })
     @PostMapping("getCommentsByUserId")
     @HystrixCommand
-    public Object getCommentsByUserId(UserMessageDTO userMessageDTO, PageAndSizeDTO pageAndSizeDTO) {
-        return this.commentService.findByUserId(userMessageDTO, pageAndSizeDTO) ;
+    public Object getCommentsByUserId(@RequestBody UserPackageDTO userPackageDTO) {
+        return this.commentService.findByUserId(userPackageDTO.getUserMessageDTO(), userPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @ApiOperation(value = "以Comment的所属BlogId搜索Comment", notes = "以BlogId的形式准确查询搜索CommentBaseDTO对象，" +
@@ -133,8 +136,9 @@ public class CommentRest {
     })
     @PostMapping("getCommentsByBlogId")
     @HystrixCommand
-    public Object getCommentsByBlogId(BlogBaseDTO blogBaseDTO, PageAndSizeDTO pageAndSizeDTO) {
-        return this.commentService.findByBlogId(blogBaseDTO, pageAndSizeDTO) ;
+    public Object getCommentsByBlogId(@RequestBody BlogPackageDTO blogPackageDTO) {
+        return this.commentService.findByBlogId(blogPackageDTO.getBlogBaseDTO(),
+                blogPackageDTO.getPageAndSizeDTO()) ;
     }
 
     @PostMapping("discover")
