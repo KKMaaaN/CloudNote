@@ -4,51 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="新建前端模块CloudNote">
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/blog/BlogPackageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/comment/CommentPackageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/crowd/CrowdPackageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/user/UserPackageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/components/BlogIndex.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/components/Main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/components/NavMenu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/components/Profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Front-End/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/GlobalCorsConfig.java" afterDir="false" />
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/BlogBaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/blog/BlogBaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/CommentBaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/comment/CommentBaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/CrowdBaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/crowd/CrowdBaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/user/UserLoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/UserMessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/dto/user/UserMessageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICrowdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/ICrowdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/BlogServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/BlogServiceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CommentSerivceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CommentSerivceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CrowdServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/CrowdServiceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/UserServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/fallback/UserServiceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/java/com/kould/controller/BlogRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/java/com/kould/controller/BlogRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/java/com/kould/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/java/com/kould/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/java/com/kould/controller/CommentRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/java/com/kould/controller/CommentRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/java/com/kould/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/java/com/kould/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/java/com/kould/controller/CrowdRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/java/com/kould/controller/CrowdRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/java/com/kould/service/impl/CrowdServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/java/com/kould/service/impl/CrowdServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Eureka-7001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Eureka-7001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/java/com/kould/controller/UserRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/java/com/kould/controller/UserRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/java/com/kould/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/java/com/kould/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,6 +177,8 @@
       <workItem from="1616766723470" duration="1295000" />
       <workItem from="1616783302736" duration="2209000" />
       <workItem from="1616828890210" duration="10576000" />
+      <workItem from="1616845046865" duration="1769000" />
+      <workItem from="1616905826746" duration="738000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -291,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616505688212</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入">
+      <created>1616845578643</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616845578643</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +288,8 @@
     <MESSAGE value="1、加入Hystrix Dashboard模块，用于检测Hystrix Command方法&#10;2、各服务加入Hystrix Dashboard支持，测试成功运行&#10;3、加入Hystrix Turbine集群监控组件，用于集束所设置包含的服务的Hystrix.stream集中检为turbine.stream用于Dashboard监控&#10;4、CloudNote-Api中Feign回退功能设置完毕，各服务也提供了熔断支持，目前对@HystrixCommand中的熔断机制是否添加正在考虑" />
     <MESSAGE value="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试" />
     <MESSAGE value="新建Sleuth模块，使用zipkin组件进行服务链路跟踪检测请求响应时间，各服务已配置完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建Sleuth模块，使用zipkin组件进行服务链路跟踪检测请求响应时间，各服务已配置完成" />
+    <MESSAGE value="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
