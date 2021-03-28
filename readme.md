@@ -8,7 +8,7 @@
 
 ***\*项目GitHub地址\****：https://github.com/KKMaaaN/CloudNote
 
-
+简单效果演示：https://v.youku.com/v_show/id_XNTEyODgyNjc0OA==.html
 
 初版后端系统架构拓扑图：
 
