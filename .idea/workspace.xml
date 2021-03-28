@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入">
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="编辑readme说明文件，新增解析说明">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +178,7 @@
       <workItem from="1616783302736" duration="2209000" />
       <workItem from="1616828890210" duration="10576000" />
       <workItem from="1616845046865" duration="1769000" />
-      <workItem from="1616905826746" duration="738000" />
+      <workItem from="1616905826746" duration="1728000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616845578643</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="编辑readme说明文件，新增解析说明">
+      <created>1616907857644</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616907857644</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +296,8 @@
     <MESSAGE value="新建SQL文件夹，导入MySQL中建表sql指令与表中测试数据提供测试" />
     <MESSAGE value="新建Sleuth模块，使用zipkin组件进行服务链路跟踪检测请求响应时间，各服务已配置完成" />
     <MESSAGE value="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入" />
+    <MESSAGE value="编辑readme说明文件，新增解析说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="编辑readme说明文件，新增解析说明" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
