@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CloudNote-CrowdSerivce-8003" />
+        <module name="CloudNote-Config-Server-7501" />
         <module name="CloudNote-Hystrix-Turbine" />
         <module name="CloudNote-Zuul-9501" />
         <module name="CloudNote-Web" />
@@ -25,6 +26,7 @@
       <module name="CloudNote-Api" target="1.7" />
       <module name="CloudNote-BlogSerivce-8001" target="1.7" />
       <module name="CloudNote-CommentService-8004" target="1.7" />
+      <module name="CloudNote-Config-Server-7501" target="1.7" />
       <module name="CloudNote-CrowdSerivce-8003" target="1.7" />
       <module name="CloudNote-Eureka-7001" target="1.7" />
       <module name="CloudNote-Hystrix-DashBoard" target="1.7" />

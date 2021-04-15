@@ -4,31 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="增加简单效果视频演示链接">
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-eureka-client.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-mybatis-plus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-sleuth-client.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-web.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-zipkin-client.yml" afterDir="false" />
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="配置文件复用，轻量化和模块化配置文件">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Config_Server_7501_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Config_Server_7501_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_2_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_17_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_bus_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bus_amqp_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_stream_rabbit_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_tuple_1_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_15_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tuple_1_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/CloudNote-Config-Server-7501.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/src/main/java/com/kould/ConfigServer7501.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Config-Server-7501/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/BlogBaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/CommentBaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/CrowdBaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/UserLoginDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/UserMessageDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/controller/CommentRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/controller/CommentRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/service/impl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/DruidDatasourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/DruidDatasourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/config/DataBase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/datasouce/DataBase.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/target/classes/com/kould/config/DruidDatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/target/classes/com/kould/config/DruidDatasourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/target/classes/config/DataBase.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentService8004">
+  <component name="RunManager" selected="Spring Boot.ConfigServer7501">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -115,19 +137,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlogService8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="CloudNote-BlogSerivce-8001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kould.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.BlogService8001" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,6 +150,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.CommentService8004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServer7501" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-Config-Server-7501" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.ConfigServer7501" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CommentService8004" />
+        <item itemvalue="Spring Boot.ConfigServer7501" />
         <item itemvalue="Spring Boot.Eureka7001" />
+        <item itemvalue="Spring Boot.CommentService8004" />
         <item itemvalue="Spring Boot.Zuul9501" />
         <item itemvalue="Spring Boot.HystrixDashBoard9001" />
-        <item itemvalue="Spring Boot.BlogService8001" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +245,7 @@
       <workItem from="1617238368976" duration="656000" />
       <workItem from="1618038235223" duration="24000" />
       <workItem from="1618134705339" duration="594000" />
-      <workItem from="1618491168715" duration="3852000" />
+      <workItem from="1618491168715" duration="7611000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -323,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616914011931</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="配置文件复用，轻量化和模块化配置文件">
+      <created>1618495439653</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618495439653</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +387,8 @@
     <MESSAGE value="编辑readme说明文件，新增解析说明" />
     <MESSAGE value="编辑readme说明文件" />
     <MESSAGE value="增加简单效果视频演示链接" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加简单效果视频演示链接" />
+    <MESSAGE value="配置文件复用，轻量化和模块化配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置文件复用，轻量化和模块化配置文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

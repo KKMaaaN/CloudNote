@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cloudnote-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/Kould/CloudNote-ConfigCenter.git
+          username: Kould
+          password: iamkk52886856
+          skip-ssl-validation: true
+          search-paths:
+            - cloudnote
+        default-label: master
+#  rabbitmq:
+#    host: raspberrypi.local
+#    port: 5672
+#    username: kould
+#    password: 52886856
+server:
+  port: 7501
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: http://localhost:7501

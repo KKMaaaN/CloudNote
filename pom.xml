@@ -19,6 +19,7 @@
       <module>CloudNote-Hystrix-DashBoard</module>
       <module>CloudNote-Hystrix-Turbine</module>
       <module>CloudNote-Sleuth-8601</module>
+    <module>CloudNote-Config-Server-7501</module>
   </modules>
   <packaging>pom</packaging>
 
