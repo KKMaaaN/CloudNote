@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="编辑readme说明文件">
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="增加简单效果视频演示链接">
+      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-eureka-client.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-mybatis-plus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-sleuth-client.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-web.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/application-zipkin-client.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/BlogBaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/CommentBaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/CrowdBaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/UserLoginDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/dto/UserMessageDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IBlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/ICrowdService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/target/classes/com/kould/service/IUserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/controller/BlogRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/target/classes/com/kould/service/impl/BlogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/controller/CommentRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/controller/CommentRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/com/kould/service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/DruidDatasourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/java/com/kould/config/DruidDatasourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/config/DataBase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/src/main/resources/datasouce/DataBase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Web/target/classes/com/kould/config/DruidDatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/target/classes/com/kould/config/DruidDatasourceConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project/RunNote" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project/KouldCloud" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,6 +90,10 @@
       <recent name="D:\CloudNote\CloudNote-Web\src\main\resources" />
       <recent name="D:\CloudNote\CloudNote-Web\src\main\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CloudNote\CloudNote-Web\src\main\resources" />
+      <recent name="D:\CloudNote\CloudNote-CommentService-8004\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kould.config" />
       <recent name="com.kould" />
@@ -81,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Zuul9501">
+  <component name="RunManager" selected="Spring Boot.CommentService8004">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -119,19 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrowdSerivce8003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="CloudNote-CrowdSerivce-8003" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kould.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.CrowdSerivce8003" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Eureka7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="CloudNote-Eureka-7001" />
       <extension name="coverage">
@@ -141,6 +154,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.Eureka7001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixDashBoard9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CloudNote-Hystrix-DashBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kould.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kould.HystrixDashBoard9001" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Zuul9501" />
-        <item itemvalue="Spring Boot.Eureka7001" />
-        <item itemvalue="Spring Boot.BlogService8001" />
         <item itemvalue="Spring Boot.CommentService8004" />
-        <item itemvalue="Spring Boot.CrowdSerivce8003" />
+        <item itemvalue="Spring Boot.Eureka7001" />
+        <item itemvalue="Spring Boot.Zuul9501" />
+        <item itemvalue="Spring Boot.HystrixDashBoard9001" />
+        <item itemvalue="Spring Boot.BlogService8001" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +216,14 @@
       <workItem from="1616783302736" duration="2209000" />
       <workItem from="1616828890210" duration="10576000" />
       <workItem from="1616845046865" duration="1769000" />
-      <workItem from="1616905826746" duration="3998000" />
+      <workItem from="1616905826746" duration="5737000" />
+      <workItem from="1617002472355" duration="397000" />
+      <workItem from="1617084166199" duration="827000" />
+      <workItem from="1617238248756" duration="102000" />
+      <workItem from="1617238368976" duration="656000" />
+      <workItem from="1618038235223" duration="24000" />
+      <workItem from="1618134705339" duration="594000" />
+      <workItem from="1618491168715" duration="3852000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -283,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616909646656</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="增加简单效果视频演示链接">
+      <created>1616914011931</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616914011931</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +357,8 @@
     <MESSAGE value="1、新建前端模块CloudNote-Front-End：&#10;a、使用Vue.js、Node.js、Element-UI、Axios等技术完成&#10;b、目前基本实现Blog页面展示的布局&#10;c、成功与CloudNote的服务模块完成交互通信&#10;2、CloudNote-Api新增PackageDTO类，完成业务DTO的包装&#10;3、CloudNote各个服务模块对Json参数接收进行修复和优化，并使用PackageDTO类进行参数的传入" />
     <MESSAGE value="编辑readme说明文件，新增解析说明" />
     <MESSAGE value="编辑readme说明文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="编辑readme说明文件" />
+    <MESSAGE value="增加简单效果视频演示链接" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加简单效果视频演示链接" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

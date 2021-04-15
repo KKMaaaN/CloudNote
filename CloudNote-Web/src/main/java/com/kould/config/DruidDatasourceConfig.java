@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 
-@PropertySource("classpath:config/DataBase.properties")
+@PropertySource("classpath:datasouce/DataBase.properties")
 @Configuration
 public class DruidDatasourceConfig {
 
