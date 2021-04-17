@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = BlogServiceFallbackFactory.class)
+@FeignClient(value = "CLOUDNOTE-BLOG-SERVICE", fallbackFactory = BlogServiceFallbackFactory.class)
 public interface IBlogService {
     String PREFIX = "/cloudnote/blog/" ;
     @PostMapping(PREFIX + "addBlog")

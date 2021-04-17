@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = CommentSerivceFallbackFactory.class)
+@FeignClient(value = "CLOUDNOTE-COMMENT-SERVICE", fallbackFactory = CommentSerivceFallbackFactory.class)
 public interface ICommentService {
     String PREFIX = "/cloudnote/comment/" ;
     @PostMapping(PREFIX + "addComment")

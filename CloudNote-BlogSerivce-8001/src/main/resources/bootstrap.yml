@@ -12,4 +12,4 @@ spring:
       client:
         simple:
           local:
-            service-id: CLOUDNOTE-BLOGSERVICE-8001
+            service-id: CLOUDNOTE-BLOG-SERVICE

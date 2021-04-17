@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUDNOTE-ZUUL-9501", fallbackFactory = CrowdServiceFallbackFactory.class)
+@FeignClient(value = "CLOUDNOTE-CROWD-SERVICE", fallbackFactory = CrowdServiceFallbackFactory.class)
 public interface ICrowdService {
     String PREFIX = "/cloudnote/crowd/" ;
     @PostMapping(PREFIX + "addCrowd")

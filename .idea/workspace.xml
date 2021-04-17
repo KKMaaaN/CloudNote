@@ -4,35 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="新增配置中心模块CloudNote-Config-Server">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_1_6_RELEASE.xml" afterDir="false" />
+    <list default="true" id="ead10f0d-a29a-4223-a4c2-2067a4514d32" name="Default Changelist" comment="配置文件投放至配置中心，Blog、Comment、Crowd、User微服务已适配远程配置拉取功能">
       <change afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_BlogSerivce_8001_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CommentService_8004_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_CrowdSerivce_8003_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_UserService_8002_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CloudNote_Web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/CloudNote-BlogSerivce-8001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-BlogSerivce-8001/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CommentService-8004/CloudNote-CommentService-8004.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CommentService-8004/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/CloudNote-CrowdSerivce-8003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/com/kould/controller/CrowdRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/com/kould/controller/CrowdRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/com/kould/service/impl/CrowdServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-CrowdSerivce-8003/target/classes/com/kould/service/impl/CrowdServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/CloudNote-UserService-8002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/com/kould/controller/UserRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/com/kould/controller/UserRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/com/kould/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-UserService-8002/target/classes/com/kould/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/CloudNote-Web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudNote-Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CloudNote-Api/src/main/java/com/kould/service/IBlogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +208,7 @@
       <workItem from="1618491168715" duration="11213000" />
       <workItem from="1618588448714" duration="4175000" />
       <workItem from="1618592686570" duration="295000" />
-      <workItem from="1618653072906" duration="2765000" />
+      <workItem from="1618653072906" duration="3075000" />
     </task>
     <task id="LOCAL-00001" summary="1、Eureka注册中心搭建完成&#10;2、Zuul网关搭建完成&#10;3、User服务基本搭建完成&#10;4、Blog服务基本搭建完成&#10;5、Crowd服务搭建中">
       <created>1616390954544</created>
@@ -348,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618499287562</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="配置文件投放至配置中心，Blog、Comment、Crowd、User微服务已适配远程配置拉取功能">
+      <created>1618655950524</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618655950524</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +366,8 @@
     <MESSAGE value="增加简单效果视频演示链接" />
     <MESSAGE value="配置文件复用，轻量化和模块化配置文件" />
     <MESSAGE value="新增配置中心模块CloudNote-Config-Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增配置中心模块CloudNote-Config-Server" />
+    <MESSAGE value="配置文件投放至配置中心，Blog、Comment、Crowd、User微服务已适配远程配置拉取功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置文件投放至配置中心，Blog、Comment、Crowd、User微服务已适配远程配置拉取功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
