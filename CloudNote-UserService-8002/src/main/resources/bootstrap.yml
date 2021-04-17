@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      name: application-user-service,eureka-client,mybatis-plus,sleuth-client,web,zipkin-client,info
+      #      profile: dev
+      label: master
+      uri: http://localhost:7501
+      username: KKMaaaN
+      password: iamkk52886856
+    discovery:
+      enabled: true
+      client:
+        simple:
+          local:
+            service-id: CLOUDNOTE-USERSERVICE-8002
