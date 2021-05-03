@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Main-Class: com.kould.Zuul9501
+Class-Path: ribbon-httpclient-2.3.0.jar jersey-client-1.19.1.jar javax.i
+ nject-1.jar log4j-to-slf4j-2.11.2.jar eureka-core-1.9.13.jar netflix-in
+ fix-0.3.0.jar gson-2.8.6.jar hibernate-validator-6.0.19.Final.jar antlr
+ -runtime-3.4.jar commons-io-2.4.jar spring-boot-starter-json-2.1.14.REL
+ EASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar jersey-core-1.19.1.ja
+ r springfox-spring-web-2.7.0.jar jackson-annotations-2.9.10.jar spring-
+ cloud-starter-netflix-hystrix-2.1.5.RELEASE.jar commons-configuration-1
+ .8.jar spring-cloud-starter-netflix-eureka-client-2.1.5.RELEASE.jar ant
+ lr-2.7.7.jar bcpkix-jdk15on-1.64.jar commons-jxpath-1.3.jar guice-4.1.0
+ .jar ribbon-2.3.0.jar spring-boot-starter-actuator-2.1.14.RELEASE.jar s
+ pringfox-swagger2-2.7.0.jar aspectjweaver-1.9.5.jar rxnetty-servo-0.4.9
+ .jar byte-buddy-1.9.16.jar stringtemplate-3.2.1.jar archaius-core-0.7.6
+ .jar spring-context-5.1.15.RELEASE.jar hystrix-core-1.5.18.jar spring-w
+ ebmvc-5.1.15.RELEASE.jar spring-cloud-starter-netflix-ribbon-2.1.5.RELE
+ ASE.jar netflix-commons-util-0.3.0.jar hystrix-serialization-1.5.18.jar
+  httpclient-4.5.12.jar rxjava-1.3.8.jar swagger-models-1.5.13.jar hystr
+ ix-metrics-event-stream-1.5.18.jar spring-cloud-netflix-hystrix-2.1.5.R
+ ELEASE.jar spring-cloud-netflix-archaius-2.1.5.RELEASE.jar jettison-1.3
+ .7.jar micrometer-core-1.1.13.jar commons-codec-1.11.jar javax.annotati
+ on-api-1.3.2.jar mapstruct-1.1.0.Final.jar ribbon-eureka-2.3.0.jar serv
+ o-core-0.12.21.jar ribbon-core-2.3.0.jar jackson-datatype-jsr310-2.9.10
+ .jar logback-core-1.2.3.jar rxjava-reactive-streams-1.2.1.jar spring-cl
+ oud-starter-netflix-archaius-2.1.5.RELEASE.jar ribbon-transport-2.3.0.j
+ ar xmlpull-1.1.3.1.jar tomcat-embed-el-9.0.34.jar spring-jcl-5.1.15.REL
+ EASE.jar stax-api-1.0.1.jar spring-cloud-starter-netflix-zuul-2.1.5.REL
+ EASE.jar spring-cloud-commons-2.1.5.RELEASE.jar jersey-apache-client4-1
+ .19.1.jar joda-time-2.10.6.jar logback-classic-1.2.3.jar HdrHistogram-2
+ .1.9.jar javassist-3.21.0-GA.jar spring-expression-5.1.15.RELEASE.jar s
+ tax2-api-3.1.4.jar snakeyaml-1.23.jar jackson-module-parameter-names-2.
+ 9.10.jar springfox-swagger-ui-2.7.0.jar ribbon-loadbalancer-2.3.0.jar s
+ pring-beans-5.1.15.RELEASE.jar spring-cloud-netflix-eureka-client-2.1.5
+ .RELEASE.jar tomcat-embed-websocket-9.0.34.jar jsr305-3.0.1.jar spring-
+ cloud-context-2.1.5.RELEASE.jar jul-to-slf4j-1.7.30.jar slf4j-api-1.7.3
+ 0.jar spring-boot-autoconfigure-2.1.14.RELEASE.jar woodstox-core-5.0.3.
+ jar spring-boot-starter-tomcat-2.1.14.RELEASE.jar spring-boot-actuator-
+ 2.1.14.RELEASE.jar rxnetty-0.4.9.jar validation-api-2.0.1.Final.jar log
+ 4j-api-2.11.2.jar asm-5.0.4.jar guava-18.0.jar xpp3_min-1.1.4c.jar spri
+ ng-boot-starter-2.1.14.RELEASE.jar spring-boot-actuator-autoconfigure-2
+ .1.14.RELEASE.jar xstream-1.4.11.1.jar httpcore-4.4.13.jar spring-secur
+ ity-rsa-1.0.9.RELEASE.jar jsr311-api-1.1.1.jar classmate-1.4.0.jar spri
+ ng-boot-2.1.14.RELEASE.jar rxnetty-contexts-0.4.9.jar eureka-client-1.9
+ .13.jar jackson-databind-2.9.10.4.jar spring-boot-starter-aop-2.1.14.RE
+ LEASE.jar LatencyUtils-2.0.3.jar commons-collections-3.2.2.jar spring-s
+ ecurity-crypto-5.1.10.RELEASE.jar spring-aop-5.1.15.RELEASE.jar spring-
+ boot-starter-web-2.1.14.RELEASE.jar jboss-logging-3.3.3.Final.jar sprin
+ g-cloud-netflix-zuul-2.1.5.RELEASE.jar commons-math-2.2.jar springfox-s
+ pi-2.7.0.jar spring-core-5.1.15.RELEASE.jar spring-cloud-starter-2.1.5.
+ RELEASE.jar netflix-statistics-0.1.1.jar hystrix-javanica-1.5.18.jar sp
+ ring-plugin-core-1.2.0.RELEASE.jar spring-cloud-netflix-ribbon-2.1.5.RE
+ LEASE.jar jackson-core-2.9.10.jar springfox-schema-2.7.0.jar swagger-an
+ notations-1.5.13.jar zuul-core-1.3.1.jar bcprov-jdk15on-1.64.jar common
+ s-lang3-3.8.1.jar reflections-0.9.11.jar springfox-core-2.7.0.jar react
+ ive-streams-1.0.3.jar jackson-module-afterburner-2.9.10.jar spring-boot
+ -starter-logging-2.1.14.RELEASE.jar jackson-datatype-jdk8-2.9.10.jar ne
+ tflix-eventbus-0.3.0.jar aopalliance-1.0.jar spring-web-5.1.15.RELEASE.
+ jar tomcat-embed-core-9.0.34.jar commons-lang-2.6.jar springfox-swagger
+ -common-2.7.0.jar
+
